@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Strike Source</title>
+    <link rel="stylesheet" href="cssource.css">
+    <link rel="icon" href="CSSource_Images/cssourcefavicon.png">
+</head>
+<body>
+<div class="container">
+    <!-- Navigation Bar -->
+    <div class="left">
+        <nav>
+            <button>
+                <a href="/Home/index.html">Home</a>
+            </button>
+            <button>
+                <a href="/CS16/cs16.html">CS 1.6</a>
+            </button>
+            <button>
+                <a href="/CSSource/css.html">CS Source</a>
+            </button>
+            <button>
+                <a href="/CSGO/csgo.html">CS:GO</a>
+            </button>
+            <button>
+                <a href="/CS2/cs2.html">CS 2</a>
+            </button>
+            <button>
+                <a href="https://www.instagram.com/csgo_dev/?hl=en" target="_blank"> 
+                    <img class="default" src="Nav_Images/LogoInstagram.png" alt="Instagram Logo">
+                    <img class="hover" src="Nav_Images/LogoInstagramHovered.png" alt="Instagram Logo Hovered">
+                    Instagram</a>
+            </button>
+            <button>
+                <a href="https://x.com/CounterStrike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <img class="default" src="Nav_Images/LogoTwitter.png" alt="Twitter Logo">
+                    <img class="hover" src="Nav_Images/LogoTwitterHovered.png" alt="Twitter Logo Hovered">
+                    Twitter</a>
+            </button>
+            <button>
+                <a href="https://www.facebook.com/groups/12.08.2012CounterStrikeGlobalOffensive/" target="_blank">
+                    <img class="default" src="Nav_Images/LogoFacebook.png" alt="Facebook Logo">
+                    <img class="hover" src="Nav_Images/LogoFacebookHovered.png" alt="Facebook Logo Hovered">
+                    Facebook</a>
+            </button>
+            <button>
+                <a href="https://store.steampowered.com/" target="blank">
+                    <img class="default" src="Nav_Images/LogoSteam.png" alt="Steam Logo">
+                    <img class="hover" src="Nav_Images/LogoSteamHovered.png" alt="Steam Logo Hovered">
+                    Steam
+                </a>
+            </button>
+        </nav>
+    </div>
+    <!-- Website Contents -->
+    <div class="right">
+        <h1>Counter Strike Source</h1>
+
+        <br><br>
+        <h2>About</h2>
+        <br><br>
+        <div class="aboutSection">
+            <p>Counter-Strike: Source was released on October 7, 2004. It was developed by Valve Corporation, using their new Source engine (the same engine later used for games like Half-Life 2). Counter-Strike: Source is a remake of the classic Counter-Strike (mainly 1.6), but with upgraded graphics, physics, and mechanics thanks to the Source engine. While it stayed true to the original's gameplay — terrorists vs. counter-terrorists — it introduced a much more modern look and feel. Some players loved the smoother visuals and physics, while others preferred the "raw" competitive style of CS 1.6. CS: Source also helped bridge the gap to newer games like Counter-Strike: Global Offensive (CS:GO).</p>
+
+            <img src="CSSource_Images/cssourceabout.png" 
+            alt="Counter Strike Global Offensive"
+            title="Counter Strike Global Offensive Logo">
+        </div>
+
+        <br><br>
+        <h2>Maps</h2>
+        <br><br>
+        <div class="mapSlider">
+            <div class="mapSlides">
+                <img class="mapSlide" src="Maps/Map1.jpg" alt="Assault" title="Assault">
+                <img class="mapSlide" src="Maps/Map2.jpg" alt="Compound" title="Compound">
+                <img class="mapSlide" src="Maps/Map3.jpg" alt="Havana" title="Havana">
+                <img class="mapSlide" src="Maps/Map4.jpg" alt="Italy" title="Italy">
+                <img class="mapSlide" src="Maps/Map5.jpg" alt="Militia" title="Militia">
+                <img class="mapSlide" src="Maps/Map6.jpg" alt="Office" title="Office">
+                <img class="mapSlide" src="Maps/Map7.jpg" alt="Aztec" title="Aztec">
+                <img class="mapSlide" src="Maps/Map8.jpg" alt="Cobble" title="Cobble">
+                <img class="mapSlide" src="Maps/Map9.jpg" alt="Chateau" title="Chateau">
+                <img class="mapSlide" src="Maps/Map10.jpg" alt="Dust" title="Dust">
+                <img class="mapSlide" src="Maps/Map11.jpg" alt="Dust 2" title="Dust 2">
+                <img class="mapSlide" src="Maps/Map12.jpg" alt="Inferno" title="Inferno">
+                <img class="mapSlide" src="Maps/Map13.jpg" alt="Nuke" title="Nuke">
+                <img class="mapSlide" src="Maps/Map14.jpg" alt="Piranesi" title="Piranesi">
+                <img class="mapSlide" src="Maps/Map15.jpg" alt="Port" title="Port">
+                <img class="mapSlide" src="Maps/Map16.jpg" alt="Prodigy" title="Prodigy">
+                <img class="mapSlide" src="Maps/Map17.jpg" alt="Tides" title="Tides">
+                <img class="mapSlide" src="Maps/Map18.jpg" alt="Train" title="Train">
+            </div>
+                <button class="prevMap" onclick="prevMapSlide()">&#10094</button>
+                <button class="nextMap" onclick="nextMapSlide()">&#10095</button>
+ 
+        </div>
+
+        <br><br>
+        <h2>Gameplay</h2>
+        <br><br>
+        <div class="centerizeContainer">
+            <iframe src="https://www.youtube.com/embed/3tyDll1PjqE?si=hTTfjmcTMQ-bgRmU" 
+            title="Counter Strike Source Gameplay" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+
+        <br><br>
+        <h2>Equipment</h2>
+        <br>
+
+        <h3 id="utilities">CT Side</h3>
+        <div class="utilitiesSlider">
+            <div class="utilitiesSlides">
+                <img class="utilitiesSlide" src="Menu/MenuCT.jpg">
+                <img class="utilitiesSlide" src="Menu/MenuCTPistol.jpg">
+                <img class="utilitiesSlide" src="Menu/MenuCTHeavy.jpg">
+                <img class="utilitiesSlide" src="Menu/MenuCTSmg.jpg">
+                <img class="utilitiesSlide" src="Menu/MenuCTRifle.jpg">
+                <img class="utilitiesSlide" src="Menu/MenuCTMachineGun.jpg">
+                <img class="utilitiesSlide" src="Menu/MenuCTGear.jpg">
+
+ 
+
+            </div>
+                <button class="prevutilities" onclick="prevutilitiesSlide()">&#10094</button>
+                <button class="nextutilities" onclick="nextutilitiesSlide()">&#10095</button>
+ 
+        </div>
+        <br>
+        <h3 id="utilities">T Side</h3>
+        <br>
+            <div class="TutilitiesSlider">
+                <div class="TutilitiesSlides">
+                    <img class="TutilitiesSlide" src="Menu/MenuT.jpg">
+                    <img class="TutilitiesSlide" src="Menu/MenuTPistol.jpg">
+                    <img class="TutilitiesSlide" src="Menu/MenuTHeavy.jpg">
+                    <img class="TutilitiesSlide" src="Menu/MenuTSmg.jpg">
+                    <img class="TutilitiesSlide" src="Menu/MenuTRifle.jpg">
+                    <img class="TutilitiesSlide" src="Menu/MenuTMachineGun.jpg">
+                    <img class="TutilitiesSlide" src="Menu/MenuTGear.jpg">
+
+                </div>
+                <button class="prevutilities" onclick="prevTutilitiesSlide()">&#10094</button>
+                <button class="nextutilities" onclick="nextTutilitiesSlide()">&#10095</button>
+        </div>
+        <br>
+        <br>
+
+    </div>
+</div>
+<!-- Footer Section -->
+<footer>
+    <p id="footer1">Counter-Strike, Counter-Strike 2, CS:GO, and their respective logos are trademarks and/or registered trademarks of Valve Corporation.</p>
+    <p id="footer2">© 2023 Valve Corporation, all rights reserved.</p>
+    <a href="https://store.steampowered.com/" target="_blank">
+        <img src="Footer_Images/LogoSteam.png" alt="Steam Logo"> Steam
+    </a>
+    <a href="https://www.instagram.com/csgo_dev/?hl=en" target="_blank">
+        <img src="Footer_Images/LogoInstagram.png" alt="Instagram Logo"> Instagram
+    </a>
+    <a href="https://x.com/CounterStrike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+        <img src="Footer_Images/LogoTwitter.png" alt="Twitter Logo"> Twitter
+    </a>
+    <a href="https://www.facebook.com/groups/12.08.2012CounterStrikeGlobalOffensive/" target="_blank"><img src="Footer_Images/LogoFacebook.png" alt="Facebook Logo">Facebook</a>
+</footer>  
+<script src="css.js"></script>
+</body>

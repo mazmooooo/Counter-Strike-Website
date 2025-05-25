@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'csgo-font';
+    src: url(cs_regular.ttf);
+}
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: csgo-font;
+    margin: 10px;
+}
+
+/* Navigation Bar */
+
+nav{background-color: orange;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav button{
+    display: flex;
+    height: 100%;
+    background-color: #000000;
+    border: 0;
+    margin: 0;
+    width: 310;
+    transition: all 0.3s ease;
+}
+
+nav button a {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 45;
+    text-decoration: none;
+    color: orange;
+    font-family: csgo-font;
+    width: 100%;
+    padding-left: 1px;
+}
+
+nav button:hover {
+    background-color: orange;
+    border-color: black;
+    transform: translateX(10px);
+}
+
+nav button:hover a {
+    color: black;
+    
+}
+
+nav img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav a img.hover {
+    display: none;
+}
+
+nav button:hover a img.default {
+    display: none;
+}
+
+nav button:hover a img.hover {
+    display: inline;
+}
+
+/* Separation between left and right containers for contents. Left for Navigation and Right for contents */
+
+.left {
+    width: 20%;
+    min-width: 250px;
+    background-color: #000000;
+    position: fixed;
+    height: 100%;
+}
+
+.right {
+    background-color: rgb(235, 184, 90);
+    margin-left: 20%;
+    padding: 20px;
+    padding-bottom: 0; 
+    height: 100%;
+}
+
+h2{
+    font-family: csgo-font;
+    font-size: 40px;
+    text-align: center;
+    background-color: black;
+    color:  rgb(235, 184, 90);
+    height: 40px;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+
+
+
+
+
+/* About Section */
+.aboutSection{
+    display: flex;
+}
+
+.aboutSection img{
+    height: auto;
+    width: 500;
+    border-radius: 25px;
+    margin-right: 30px;
+}
+
+.aboutSection p{
+    font-size: 20px;
+    margin-right: 15%;
+    width: 40%;
+    font-family: sans-serif;
+    margin-left: 30px;
+
+}
+
+/* Skin Rarity Section */
+
+
+.skinrarity h3{
+    color: rgb(235, 184, 90) ;
+}
+
+.skinrarity{
+    border: yellow;
+    background-color: #000000;
+    margin: auto;
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.skinrarity p {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+
+.skinrarity p:hover {
+    transform: scale(1.2);
+    color: white;
+}
+
+
+.skinrarity #Consumer { color: gray; }
+.skinrarity #Industrial { color: #5184BC; }
+.skinrarity #Mil-spec { color: #4B69F7; }
+.skinrarity #Restricted { color: #7849D9 }
+.skinrarity #Classified { color: #D32CE6; }
+.skinrarity #Covert { color: #E64A4A; }
+.skinrarity #Contraband { color: gold; }
+
+.SkinRaritySection{
+    display: flex;
+}
+
+.centerizeContainer{
+    display: flex;
+    justify-content: center;
+}
+
+iframe{
+    width: 995 ;
+    height: 575 ;
+    border-radius: 25px;
+}
+
+
+/* Image Slider */
+.imgSliderContainer {
+    border: solid black;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+    height: auto;
+    border-radius: 25px;
+    
+}
+
+img.displaySlide {
+    display: block;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(235, 184, 90);
+    border-radius: 50px;
+    color: black;
+    border: 10;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.prev {
+    left: 5;
+}
+
+.next {
+    right: 5;
+}
+
+
+
+/* Map Image Slider */
+
+.mapSlider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mapSlider img{
+    width: 75%;
+    display: none;
+    margin: auto;
+    border-radius: 25px;
+}
+
+img.mapDisplaySlide{
+    display: block;
+}
+
+.mapSlider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: black;
+    color: rgb(235, 184, 90);
+    border-radius: 50px;
+    border: 10;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.prevMap{
+    left: 100;
+}
+
+.nextMap{
+    right: 100;
+}
+
+/* Utilities image Slider */
+
+.utilitiesSlider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.utilitiesSlider img{
+    width: 75%;
+    display: none;
+    margin: auto;
+    border-radius: 25px;
+}
+
+img.utilitiesDisplaySlide{
+    display: block;
+}
+
+.utilitiesSlider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: black;
+    color: rgb(235, 184, 90);
+    border-radius: 50px;
+    border: 10;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.prevutilities{
+    left: 100;
+}
+
+.nextutilities{
+    right: 100;
+}
+
+/* T side utilities */
+
+.TutilitiesSlider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.TutilitiesSlider img{
+    width: 75%;
+    display: none;
+    margin: auto;
+    border-radius: 25px;
+}
+
+img.TutilitiesDisplaySlide{
+    display: block;
+}
+
+.TutilitiesSlider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background-color: black;
+    color: rgb(235, 184, 90);
+    border-radius: 50px;
+    border: 10;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.prevTutilities{
+    left: 100;
+}
+
+.nextTutilities{
+    right: 100;
+}
+
+
+#utilities{
+    font-family: csgo-font;
+    font-size: 30px;
+    text-align: center;
+    height: 10px;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    border: 0;
+    width: 80%;
+    margin-left: 20%;
+}
+
+footer a{
+    font-family: csgo-font;
+    display: flex;
+    align-items: center;
+    font-size: 25;
+    text-decoration: none;
+    color: rgb(235, 184, 90);
+    margin-right: 10px;
+}
+
+footer a img{
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+footer p{
+    
+    width: 100%;
+    color: rgb(235, 184, 90);
+}
+
+#footer1{
+    margin-bottom: 0;
+}
+
+#footer2{
+    margin-top: 3px;
+}
