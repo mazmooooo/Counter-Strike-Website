@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'csgo-font';
+    src: url(cs_regular.ttf);
+}
+
+*{font-family: sans-serif;}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: csgo-font;
+    margin: 10px;
+}
+
+h2{
+    font-family: csgo-font;
+    font-size: 40px;
+    text-align: center;
+    background-color: black;
+    color:  rgb(235, 184, 90);
+    height: 40px;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    border-radius: 50px;
+}
+
+/* Navigation Bar */
+
+nav{background-color: orange;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav button{
+    display: flex;
+    height: 100%;
+    background-color: #000000;
+    border: 0;
+    margin: 0;
+    width: 310;
+    transition: all 0.3s ease;
+}
+
+nav button a {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 45;
+    text-decoration: none;
+    color: orange;
+    font-family: csgo-font;
+    width: 100%;
+    padding-left: 1px;
+}
+
+nav button:hover {
+    background-color: orange;
+    border-color: black;
+    transform: translateX(10px);
+}
+
+nav button:hover a {
+    color: black;
+    
+}
+
+nav img{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav a img.hover {
+    display: none;
+}
+
+nav button:hover a img.default {
+    display: none;
+}
+
+nav button:hover a img.hover {
+    display: inline;
+}
+
+/* Left class is for the navigation section and indexright is for the website content */
+
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: #000000;
+    overflow: hidden;
+    position: fixed;
+}
+
+.indexright{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235, 184, 90);
+    padding-left: 20%;
+    padding-right: 20;
+    margin: 0;
+    border: 2;
+}
+
+
+.imgcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-content: space-evenly;
+    width: 70%;
+    height: 70%;
+}
+
+.imgcontainer img:hover{
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+}
+
+.imgcontainer img{
+    width: 320;
+    height: 180;
+    border-radius: 10px;
+}
