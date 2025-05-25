@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Strike 2</title>
+    <link rel="stylesheet" href="cs2.css">
+    <link rel="icon" href="CS2_Images/cs2favicon.png">
+</head>
+<body>
+<div class="container">
+
+    <!-- Navigation bar -->
+    <div class="left">
+        <nav>
+            <button>
+                <a href="/Home/index.html">Home</a>
+            </button>
+            <button>
+                <a href="/CS16/cs16.html">CS 1.6</a>
+            </button>
+            <button>
+                <a href="/CSSource/css.html">CS Source</a>
+            </button>
+            <button>
+                <a href="/CSGO/csgo.html">CS:GO</a>
+            </button>
+            <button>
+                <a href="/CS2/cs2.html">CS 2</a>
+            </button>
+            <button>
+                <a href="https://www.instagram.com/csgo_dev/?hl=en" target="_blank"> 
+                    <img class="default" src="Nav_Images/LogoInstagram.png" alt="Instagram Logo">
+                    <img class="hover" src="Nav_Images/LogoInstagramHovered.png" alt="Instagram Logo Hovered">
+                    Instagram</a>
+            </button>
+            <button>
+                <a href="https://x.com/CounterStrike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+                    <img class="default" src="Nav_Images/LogoTwitter.png" alt="Twitter Logo">
+                    <img class="hover" src="Nav_Images/LogoTwitterHovered.png" alt="Twitter Logo Hovered">
+                    Twitter</a>
+            </button>
+            <button>
+                <a href="https://www.facebook.com/groups/12.08.2012CounterStrikeGlobalOffensive/" target="_blank">
+                    <img class="default" src="Nav_Images/LogoFacebook.png" alt="Facebook Logo">
+                    <img class="hover" src="Nav_Images/LogoFacebookHovered.png" alt="Facebook Logo Hovered">
+                    Facebook</a>
+            </button>
+            <button>
+                <a href="https://store.steampowered.com/" target="blank">
+                    <img class="default" src="Nav_Images/LogoSteam.png" alt="Steam Logo">
+                    <img class="hover" src="Nav_Images/LogoSteamHovered.png" alt="Steam Logo Hovered">
+                    Steam
+                </a>
+            </button>
+        </nav>
+    </div>
+    <!-- Website Contents -->
+    <div class="right">
+        <h1>Counter Strike 2</h1>
+
+        <br><br>
+        <h2>About</h2>
+        <br><br>
+        <div class="aboutSection">
+            <p>Counter-Strike 2 (CS2) was officially released on September 27, 2023. It was developed by Valve Corporation. Counter-Strike 2 is the next-generation upgrade to CS:GO, built on Valve's Source 2 engine. Instead of being a completely new game, it acts as a free upgrade to CS:GO, improving graphics, physics, and network responsiveness (using something called "sub-tick" servers for better accuracy). It kept the classic CS gameplay but added sharper visuals, updated maps, dynamic smoke grenades, and more realistic lighting. CS2 aims to modernize the Counter-Strike experience while keeping the hardcore competitive spirit that fans love.</p>
+
+            <img src="CS2_Images/cs2about.jpg" 
+            alt="Counter Strike 2"
+            title="Counter Strike 2">
+        </div>
+
+        <br><br>
+        <h2>Maps</h2>
+        <br><br>
+        <div class="mapSlider">
+            <div class="mapSlides">
+                <img class="mapSlide" src="Maps/MapAgency1.jpg" alt="Agency" title="Agency">
+                <img class="mapSlide" src="Maps/MapAncient2.jpg" alt="Ancient" title="Ancient">
+                <img class="mapSlide" src="Maps/MapAnubis3.jpg" alt="Anubis" title="Anubis">
+                <img class="mapSlide" src="Maps/MapItaly4.jpg" alt="Italy" title="Italy">
+                <img class="mapSlide" src="Maps/MapNuke5.jpg" alt="Nuke" title="Nuke">
+                <img class="mapSlide" src="Maps/MapOffice6.jpg" alt="Office" title="Office">
+                <img class="mapSlide" src="Maps/MapOverpass7.jpg" alt="Overpass" title="Overpass">
+                <img class="mapSlide" src="Maps/MapTrain8.jpg" alt="Train" title="Train">
+                <img class="mapSlide" src="Maps/MapVertigo9.jpg" alt="Vertigo" title="Vertigo">
+                <img class="mapSlide" src="Maps/MapInferno10.jpg" alt="Inferno" title="Inferno">
+                <img class="mapSlide" src="Maps/MapDust211.jpg" alt="Dust 2" title="Dust 2">
+                <img class="mapSlide" src="Maps/MapMirage12.jpg" alt="Mirage" title="Mirage">
+            </div>
+                <button class="prevMap" onclick="prevMapSlide()">&#10094</button>
+                <button class="nextMap" onclick="nextMapSlide()">&#10095</button>
+ 
+        </div>
+
+        <br><br>
+        <h2>Gameplay</h2>
+        <br><br>
+        <div class="centerizeContainer">
+            <iframe src="https://www.youtube.com/embed/z66wprZvi34?si=oGMQjxqoCku42Hlo" 
+            title="Counter Strike 2 Gameplay" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+
+        <br><br>
+        <h2 id="skins">Skins</h2>
+        <br><br>
+        <div class="SkinRaritySection">
+            <div class="slider">
+                <div class="slides">
+                    <img class="slide" 
+                    src="Rarity\Skin1Consumer.jpg" 
+                    alt="Consumer Grade Picture"
+                    title="Consumer Grade">
+                    <img class="slide" 
+                    src="Rarity\Skin2Industrial.jpg" 
+                    alt="Industrial Grade Picture"
+                    title="Industrial Grade">
+                    <img class="slide" 
+                    src="Rarity\Skin3Milspec.jpg" 
+                    alt="Mil-Spec Grade Picture"
+                    title="Mil-Spec Grade">
+                    <img class="slide" 
+                    src="Rarity\Skin4Restricted.jpg" 
+                    alt="Restricted Grade Picture"
+                    title="Restricted Grade">
+                    <img class="slide" 
+                    src="Rarity/Skin5Classified.jpg" 
+                    alt="Classified Grade Picture"
+                    title="Classified Grade">
+                    <img class="slide" 
+                    src="Rarity/Skin6Covert.jpg" 
+                    alt="Covert Grade Picture"
+                    title="Covert Grade">
+                    <img class="slide" 
+                    src="Rarity/Skin7Contraband.jpg" 
+                    alt="Contraband Grade Picture"
+                    title="Contraband Grade">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+            <div class="skinrarity">
+                <h3>Skin Rarity Chart</h3>
+                <p id="Contraband">Contraband</p>
+                <p id="Covert">Covert</p>
+                <p id="Classified">Classified</p>
+                <p id="Restricted">Restricted</p>
+                <p id="Mil-spec">Mil-spec</p>
+                <p id="Industrial">Industrial</p>
+                <p id="Consumer">Consumer</p>
+            </div>
+        </div>
+
+        <br><br>
+        <h2>Equipment</h2>
+        <br>
+
+        <div class="utilitiesSlider">
+            <div class="utilitiesSlides">
+                <img class="utilitiesSlide" src="Menu/MenuCT.jpg">
+                <img class="utilitiesSlide" src="Menu/MenuT.jpg">
+
+            </div>
+                <button class="prevutilities" onclick="prevutilitiesSlide()">&#10094</button>
+                <button class="nextutilities" onclick="nextutilitiesSlide()">&#10095</button>
+ 
+        </div>
+        <br><br>
+    </div>
+
+</div>
+<!-- Footer -->
+<footer>
+    <p id="footer1">Counter-Strike, Counter-Strike 2, CS:GO, and their respective logos are trademarks and/or registered trademarks of Valve Corporation.</p>
+    <p id="footer2">© 2023 Valve Corporation, all rights reserved.</p>
+    <a href="https://store.steampowered.com/" target="_blank">
+        <img src="Footer_Images/LogoSteam.png" alt="Steam Logo"> Steam
+    </a>
+    <a href="https://www.instagram.com/csgo_dev/?hl=en" target="_blank">
+        <img src="Footer_Images/LogoInstagram.png" alt="Instagram Logo"> Instagram
+    </a>
+    <a href="https://x.com/CounterStrike?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+        <img src="Footer_Images/LogoTwitter.png" alt="Twitter Logo"> Twitter
+    </a>
+    <a href="https://www.facebook.com/groups/12.08.2012CounterStrikeGlobalOffensive/" target="_blank"><img src="Footer_Images/LogoFacebook.png" alt="Facebook Logo">Facebook</a>
+</footer>    
+<script src="cs2.js"></script>
+
+</body>
